@@ -1,0 +1,22 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Mon 2017-03-20 15:27:25 EDT; 26min ago
+     Docs: https://docs.docker.com
+ Main PID: 970 (dockerd)
+    Tasks: 18
+   Memory: 53.9M
+      CPU: 3.699s
+   CGroup: /system.slice/docker.service
+           ├─ 970 /usr/bin/dockerd -H fd://
+           └─1122 docker-containerd -l unix:///var/run/docker/libcontainerd/docker-containerd.sock --metrics-interval=0 --start-timeout 2m --state-dir /var/run/docker/libcontainerd/containerd --shim docker-containerd-shim --runtime docker-runc
+
+Mar 20 15:27:23 tri-VirtualBox dockerd[970]: time="2017-03-20T15:27:23.132715439-04:00" level=warning msg="Your kernel does not support cgroup rt period"
+Mar 20 15:27:23 tri-VirtualBox dockerd[970]: time="2017-03-20T15:27:23.132832510-04:00" level=warning msg="Your kernel does not support cgroup rt runtime"
+Mar 20 15:27:23 tri-VirtualBox dockerd[970]: time="2017-03-20T15:27:23.133906738-04:00" level=info msg="Loading containers: start."
+Mar 20 15:27:23 tri-VirtualBox dockerd[970]: time="2017-03-20T15:27:23.375534732-04:00" level=info msg="Firewalld running: false"
+Mar 20 15:27:24 tri-VirtualBox dockerd[970]: time="2017-03-20T15:27:24.377340069-04:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Mar 20 15:27:24 tri-VirtualBox dockerd[970]: time="2017-03-20T15:27:24.472902286-04:00" level=info msg="Loading containers: done."
+Mar 20 15:27:25 tri-VirtualBox dockerd[970]: time="2017-03-20T15:27:25.787541862-04:00" level=info msg="Daemon has completed initialization"
+Mar 20 15:27:25 tri-VirtualBox dockerd[970]: time="2017-03-20T15:27:25.787595480-04:00" level=info msg="Docker daemon" commit=60ccb22 graphdriver=aufs version=17.03.0-ce
+Mar 20 15:27:25 tri-VirtualBox systemd[1]: Started Docker Application Container Engine.
+Mar 20 15:27:25 tri-VirtualBox dockerd[970]: time="2017-03-20T15:27:25.851255444-04:00" level=info msg="API listen on /var/run/docker.sock"
