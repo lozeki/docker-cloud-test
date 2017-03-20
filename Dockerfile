@@ -1,3 +1,6 @@
 FROM ubuntu:xenial
-WORKDIR /src
+
+
 COPY . /src
+WORKDIR /src
+
