@@ -1,5 +1,9 @@
-I was surprised about almost everythings on the posts. Everything is working automatic and it is fine without human.
-All of the companys use the progress are similar with others. But some of them develop them and some use the tools from other sources.
-The post from codeship is most easy to understand because it is about docker and test and so on.
-Develop may post the similar code and all pass the test, I really wonder what will happen to those codes.
+1. First, I install Flask and other environments on the server. The Dockerfile is a important file, I had a lot of problem with it.
+
+2. I used python on the app code, but I am not good ai it. The professor already did the code and I just need to understand what the code do.
+
+3. The run and test process. I need to makesure the result when run unh698.py is the same with the thing that I expect on unh698test.py when we execute it from run_tests.sh.
+
+4. I used the key and IP from professor to connect to AWS instance and install docker github. I still couldn't make the image run on the background.
+
 
