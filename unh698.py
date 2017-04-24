@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -14,4 +14,3 @@ def character():
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0',port=5000)
 
-app.config['PRESERVE_CONTEXT_ON_EXCEPTION'] = False

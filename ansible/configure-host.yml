@@ -7,19 +7,5 @@
   hosts: localhost
   become: true
   roles:
-    - docker
+    - unh698
 
-- name: build-docker-image
-  docker_image: >
-    name: docker-cloud-test
-    repository: lozeki/docker-cloud-test
-    tag: release-0.0.3
-    state: build
-
-- name: Run-web-version-003
-  docker:
-    name: web-version-003
-    image: "docker-cloud-test:release-0.0.3"
-    hosts: 54.183.103.73:8080
-    state: reloaded
-    publish_all_ports: yes
