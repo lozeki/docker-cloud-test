@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return "UNH698 Website"
 
-@app.route('/marvel')
+@app.route('/')
 def marvel():
     return render_template('marvel.html')
 

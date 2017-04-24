@@ -18,7 +18,7 @@ class FlaskrTestCase(unittest.TestCase):
         assert b'UNH698 Website' in rv.data 
 
     def test_link_to_my_page(self):
-        rv = self.app.get('/marvel')  
+        rv = self.app.get('/')  
         # Search the page contents for the link to your topic page 
         # Replace xxxxxxxxxxxx with text you'd expect to see on your main pa$
         assert b'Character' in rv.data 
