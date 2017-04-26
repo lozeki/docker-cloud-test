@@ -3,3 +3,4 @@
 # that will be used in the unh698 role.
 unh698_image: lozeki/docker-cloud-test
 unh698_command: python3 /src/unh698.py
+final_version: 0.0.4
