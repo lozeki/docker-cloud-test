@@ -9,7 +9,7 @@
 <a href="/"><strong>Home</strong></a>
 
 <p>{% for item in list %}
-        <p>{{ item.name }} </p> <p>{{ item.release }} </p> <p><img src= item.image  alt="{{ item.image }}" width="216" height="324"></p>
+        <p>{{ item.name }} </p> <p>{{ item.release }} </p> <p><img src= "{{ item.image }}"  alt="{{ item.image }}" width="216" height="324"></p>
    {% endfor %}
 </p>
 
