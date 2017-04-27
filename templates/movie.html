@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UNH698 Website - Movies</title>
+</head>
+<body>
+
+<h1>Marvel - Movies</h1>
+<a href="/"><strong>Home</strong></a>
+<ul>
+<p>{% for item in filmlist %}
+        <li>{{ item.name }}</li>
+        <li>{{ item.release }}</li>
+        <li><img src= "{{ item.image }}" alt="{{ item.image }}" width="216" height="324"></li>
+   {% endfor %}
+</p>
+</ul>
+<p>From <a href="http://marvel.com/movies/">Marvel</a> </p>
+</body>
+</html>

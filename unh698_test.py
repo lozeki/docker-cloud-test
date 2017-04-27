@@ -21,13 +21,13 @@ class FlaskrTestCase(unittest.TestCase):
         rv = self.app.get('/')  
         # Search the page contents for the link to your topic page 
         # Replace xxxxxxxxxxxx with text you'd expect to see on your main pa$
-        assert b'Character' in rv.data 
+        assert b'Movies' in rv.data 
 
     def test_my_topic(self):
         # Replace '/' with the page path you want to make
-        rv = self.app.get('/character')  
+        rv = self.app.get('/movie')  
         # Replace UNH698 Website with the text you expect to see on you topi$
-        assert b'Batman' in rv.data 
+        assert b'Marvel' in rv.data 
 
 if __name__ == '__main__':
     unittest.main()
