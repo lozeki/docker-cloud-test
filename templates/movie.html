@@ -11,10 +11,10 @@
 <p>{% for item in filmlist %}
         <li>{{ item.name }}</li>
         <li>{{ item.release }}</li>
-        <li><img src= {{ item.image }} alt="{{ item.name }}" width="216" height="324"></li>
+        <li><img src= "{{ item.image }}" alt="{{ item.image }}" width="216" height="324"></li>
    {% endfor %}
 </p>
 </ul>
-
+<p>From <a href="http://marvel.com/movies/">Marvel</a> </p>
 </body>
 </html>
