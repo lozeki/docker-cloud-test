@@ -7,14 +7,12 @@
 
 <h1>Marvel - Movies</h1>
 <a href="/"><strong>Home</strong></a>
-<ul>
-<p>{% for item in filmlist %}
-        <li>{{ item.name }}</li>
-        <li>{{ item.release }}</li>
-        <li><img src= "{{ item.image }}" alt="{{ item.image }}" width="216" height="324"></li>
+
+<p>{% for item in list %}
+        <p>{{ item.name }} </p> <p>{{ item.release }} </p> <p><img src= "{{ item.image }}" alt="{{ item.image }}" width="216" height="324"></p>
    {% endfor %}
 </p>
-</ul>
+
 <p>From <a href="http://marvel.com/movies/">Marvel</a> </p>
 </body>
 </html>
